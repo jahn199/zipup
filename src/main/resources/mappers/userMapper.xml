@@ -4,11 +4,11 @@
 
 <mapper namespace="com.teamzipup.zipup.mapper.UserMapper">
 
-    <select id="" >
-        SELECT * FROM
-    </select>
-
-
+    <!-- 판매자 회원가입 -->
+    <insert id="insertSeller">
+        INSERT INTO USER (ROLE, EMAIL, PASSWORD, COMPANYNAME, BUSINESSNUMBER, PHONENUMBER, ADDRESS)
+        VALUES (#{role}, #{email}, #{password}, #{companyName}, #{businessNumber}, #{phoneNumber}, #{address});
+    </insert>
 
 
 
