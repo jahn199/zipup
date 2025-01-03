@@ -22,5 +22,11 @@ public class ProductServiceImpl implements ProductService {
     public List<Product> searchProducts(String productName) {
         return productMapper.searchProducts(productName);
     }
+
+    // 상품 판매자 조회
+    @Override
+    public Product getProductById(long id) {
+        return productMapper.findById(id);
+    }
 }
 

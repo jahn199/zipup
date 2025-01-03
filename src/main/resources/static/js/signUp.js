@@ -39,8 +39,10 @@ document.addEventListener("DOMContentLoaded", function () {
             .then(response => response.json())
             .then(data => {
                 if (data.isTaken) {
+
                     sellerEmailChecked = false; // 이메일 중복
                 } else {
+
                     sellerEmailChecked = true; // 이메일 사용 가능
                 }
             })
