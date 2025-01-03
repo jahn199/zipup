@@ -27,18 +27,6 @@ public class ProductController {
     @Autowired
     private UserService userService;
 
-    /* 상품 검색 */
-    @GetMapping("/productList")
-    public String searchProducts
-    (@RequestParam(required = false) String productName, Model model ) {
-
-        List<Product> products = productService.searchProducts(productName);
-
-        model.addAttribute("products", products);
-
-        return "index";
-    }
-
     /* 상품 상세 페이지 이동 */
     @GetMapping("/product/{id}")
     public String viewProductDetail(@PathVariable Long id, Model model) {

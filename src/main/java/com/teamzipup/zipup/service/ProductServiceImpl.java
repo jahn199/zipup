@@ -17,10 +17,10 @@ public class ProductServiceImpl implements ProductService {
     @Autowired
     private ProductMapper productMapper;
 
-    // 상품 검색
+    // 상품 판매자 조회
     @Override
-    public List<Product> searchProducts(String productName) {
-        return productMapper.searchProducts(productName);
+    public Product getProductById(long id) {
+        return productMapper.findById(id);
     }
 }
 

@@ -7,6 +7,6 @@ import java.util.List;
 
 public interface ProductService {
 
-    // 상품 검색
-    List<Product> searchProducts(String productName);
+    // 상품 ID로 조회
+    Product getProductById(long id);
 }

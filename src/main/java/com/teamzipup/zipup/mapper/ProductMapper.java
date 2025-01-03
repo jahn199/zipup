@@ -9,6 +9,6 @@ import java.util.List;
 @Mapper
 public interface ProductMapper {
 
-    // 상품 검색
-    List<Product> searchProducts(@Param("productName")String productName);
+    // 상품 ID로 조회
+    Product findById(long id);
 }
