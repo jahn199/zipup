@@ -13,4 +13,5 @@ public interface UserMapper {
     //판매자 저장
     void insertSeller(User user);
 
+
 }

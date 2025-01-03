@@ -30,7 +30,7 @@ public class ProductController {
     /* 상품 검색 */
     @GetMapping("/productList")
     public String searchProducts
-            (@RequestParam(required = false) String productName, Model model ) {
+    (@RequestParam(required = false) String productName, Model model ) {
 
         List<Product> products = productService.searchProducts(productName);
 

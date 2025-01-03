@@ -1,53 +1,10 @@
 
-/* -------------------- 회원가입 선택 파트 ----------------------- */
-
-.signup-container {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-
-.signup-button-box {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 195px;
-    height: 116px;
-    border: 3px solid gray;
-    border-radius: 10px;
-    transition: all 0.3s ease;
-    cursor: pointer;
-}
-.signup-button-box:hover {
-    transform: scale(1.05);
-    border-color: #3e71fe;
-}
-.signup-button-box img.shop_icon,
-.signup-button-box img.cart_icon {
-    width: 64px;
-    height: 64px;
-    margin-bottom: 5px;
-    transition: filter 0.3s ease;
-}
-.signup-button-box:hover img.shop_icon {
-    content: url("/images/svg/shopBlue.svg");
-}
-.signup-button-box:hover img.cart_icon {
-    content: url("/images/svg/cartBlue.svg");
-}
-.signup-button-box p {
-    font-size: 18px;
-    font-weight: bold;
-    color: black;
-    margin: 0;
-    transition: color 0.3s ease;
-}
-.signup-button-box:hover p {
-    color: #3e71fe;
-}
-
 /* ------------------- 메인 페이지 검색 결과 가리기 --------------- */
 #productList {
     display: none;
+}
+
+/* ------------------- 판매자 회원가입 추가 css ------------------- */
+#email.zipup-input {
+    margin-bottom: 1px;
 }

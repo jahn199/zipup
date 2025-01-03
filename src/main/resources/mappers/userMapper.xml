@@ -10,6 +10,4 @@
         VALUES (#{role}, #{email}, #{password}, #{companyName}, #{businessNumber}, #{phoneNumber}, #{address});
     </insert>
 
-
-
 </mapper>
